@@ -17,6 +17,8 @@ nav {
     padding: 10px;
 }
 
+
+
 nav::after {
     display: block;
 }
@@ -26,7 +28,7 @@ nav::after {
     float: left;
 }
 
-.main_nav {
+button {
     margin-left: auto;
     float: left;
     display: inline-block;
@@ -67,7 +69,7 @@ li {
     font-size: 15px;
 }
 
-.main_nav a {
+button a {
     display: block;
     background-color: #ffffff;
     padding: 8px;
@@ -79,7 +81,7 @@ li {
     position: absolute;
     width: 300px;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: #ffffff;
     border: 1px solid black;
     border-radius: 30px;
@@ -90,7 +92,7 @@ li {
     position: absolute;
     width: 160px;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: #ffffff;
     border: 1px solid black;
     border-radius: 30px;
@@ -99,30 +101,36 @@ li {
 .drop_list3 {
     display: none;
     position: absolute;
-    width: 240px;
+    width: 300px;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: -100px;
     background-color: #ffffff;
     border: 1px solid black;
     border-radius: 30px;
 }
 
-.main_nav>ul>div:not(.drop_list3)>li>a{
+button>ul>div>li>a{
     color: black;
     padding-left: 8px;
     float: left;
     text-decoration: none;
     display: block;
 }
-
+button>ul>div>li {
+    margin-top: 7px;
+    margin-left: 5px;
+}
 .drop_list3>li>a{
     color: black;
-    font-size: 10px;
+    font-size: 12px;
+    margin-top: 3px;
     padding: 2% 0 0 0;
     float: left;
     text-decoration: none;
     display: block;
 }
+
 
 
 .show {display:block;}

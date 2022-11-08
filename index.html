@@ -13,7 +13,7 @@
         <img class="logo" src="logo.png" width="100px" alt="로고">
         <div class="nav_box">
             <ul>
-                <button onclick="nav_click1()" class="main_nav"><p>카카오</p>
+                <button onclick="nav_click1()" onmouseover="nav_change_col(this.id)" onmouseout="nav_change_col_out()" id="main_nav1"><p>카카오</p>
                     <ul>
                         <div class="drop_list1" id="drop_list1">
                             <li ><a href="">카카오 문화</a></li>
@@ -22,10 +22,10 @@
                         </div>
                     </ul>
                 </button>
-                <button class="main_nav"><p>뉴스</p>
+                <button id="main_nav2" onmouseover="nav_change_col(this.id)" onmouseout="nav_change_col_out()" ><p id="button2">뉴스</p>
 
                 </button>
-                <button onclick="nav_click2()" class="main_nav"><p>기술과 서비스</p>
+                <button onclick="nav_click2()" onmouseover="nav_change_col(this.id)" onmouseout="nav_change_col_out()" id="main_nav3"><p>기술과 서비스</p>
                     <ul>
                         <div class="drop_list2" id="drop_list2">
                             <li><a href="">기술</a></li>
@@ -33,7 +33,7 @@
                         </div>
                     </ul>
                 </button>
-                <button onclick="nav_click3()" class="main_nav"><p>약속과 책임</p>
+                <button onclick="nav_click3()" onmouseover="nav_change_col(this.id)" onmouseout="nav_change_col_out()" id="main_nav4"><p>약속과 책임</p>
                     <ul> 
                         <div class="drop_list3" id="drop_list3">
                             <li><a href="">ESG</a></li>
