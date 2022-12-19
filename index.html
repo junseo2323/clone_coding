@@ -8,9 +8,10 @@
     <script src="script.js"></script>
     <title>kakao clone_SeoJun</title>
 </head>
-<body>
+<body> 
+    
     <nav>
-        <img class="logo" src="logo.png" width="100px" alt="로고">
+        <img class="logo" src="./img/logo.png" width="100px" alt="로고">
         <div class="nav_box">
             <ul>
                 <button onclick="nav_click1()" onmouseover="nav_change_col(this.id)" onmouseout="nav_change_col_out()" id="main_nav1"><p>카카오</p>
@@ -46,33 +47,180 @@
             </ul>
         </div>
         <div class="item_box">
-            <img src="search.png" alt="검색 아이콘">
-            <img src="internet.png" alt="언어 선택">
-            <img src="moon.png" alt="나이트모드">
+            <img src="./img/search.png" alt="검색 아이콘">
+            <img src="./img/internet.png" alt="언어 선택">
+            <img src="./img/moon.png" alt="나이트모드">
         </div>
     </nav>
     
-    <section>
+    <section id="wapper">
         <div id="title">
-            <img src="" alt="이모지">
-            <h1>오늘의 카카오</h1>
-            <h1>10월 26일 수요일 소식입니다</h1>
+            <h1><img src="img/date.png" width="50px" height="50px"  alt="이모지">
+                오늘의 카카오</h1>
+
+            <h1><span class="month"></span>월 <span class="day"></span>일 <span class="days"></span>요일 소식입니다</h1>
         </div>
         <div id="today-news">
-            여기는 오늘의 뉴스가 들어갑니다.
+            <div class="left_side">    
+                <div class="content_B">
+                <div class="contetn_info">
+                    <img src="img/content_icon.png" width="50px" height="50px" alt="아이콘" class="content_icon">
+                    <div class="topic">
+                        <p>보도자료</p>
+                    </div>
+                    <p class="date">2022.02.02</p>
+                </div>
+                <section class="content">
+                    <h1>여기에 제목이 들어갑니다.</h1>
+                </section>
+                    
+                </div>
+            </div>
+            <div class="side">
+                <div class="content_M">
+                    <div class="contetn_info">
+                        <img src="img/content_icon.png" width="50px" height="50px" alt="아이콘" class="content_icon">
+                        <div class="topic">
+                            <p>보도자료</p>
+                        </div>
+                        <p class="date">2022.02.02</p>
+                    </div>
+                    <section class="content">
+                        <h1>여기에 제목이 들어갑니다.</h1>
+                    </section>
+                </div>
+                <div class="content_S">
+                    <img src="" alt="아이콘" class="content_icon">
+                    <div class="topic">
+                        <p>보도자료</p>
+                    </div>
+                    <p class="date">2022.02.02</p>
+                </div>
+                <div class="content_M">
+                    <img src="" alt="아이콘" class="content_icon">
+                    <div class="topic">
+                        <p>보도자료</p>
+                    </div>
+                    <p class="date">2022.02.02</p>
+                </div>
+                <div class="content_S">
+                    <img src="" alt="아이콘" class="content_icon">
+                    <div class="topic">
+                        <p>보도자료</p>
+                    </div>
+                    <p class="date">2022.02.02</p>
+                </div>
+            </div>
         </div>
         <div id="ad">
-            여기는 광고(바로가기)가 들어갑니다.
+            <div class="content_L">
+                <h1>기술과 사람으로 더 나은 세상을 만듭니다</h1>
+                <button>카카오문화 바로가기 <img src="" alt="화살표"></button>
+            </div>
         </div>
-        <div id="ext">
-            여기는 기타 섹션이 들어갑니다.
+        <div id="ect">
+            <div class="content_S">
+                <img src="" alt="아이콘" class="content_icon">
+                <div class="topic">
+                    <p>보도자료</p>
+                </div>
+                <p class="date">2022.02.02</p>
+            </div>
+            <div class="content_M">
+                <img src="" alt="아이콘" class="content_icon">
+                <div class="topic">
+                    <p>보도자료</p>
+                </div>
+                <p class="date">2022.02.02</p>
+            </div>
+            <div class="content_S">
+                <img src="" alt="아이콘" class="content_icon">
+                <div class="topic">
+                    <p>보도자료</p>
+                </div>
+                <p class="date">2022.02.02</p>
+            </div>
+            <div class="content_S">
+                <img src="" alt="아이콘" class="content_icon">
+                <div class="topic">
+                    <p>보도자료</p>
+                </div>
+                <p class="date">2022.02.02</p>
+            </div>
+            <div class="content_S">
+                <img src="" alt="아이콘" class="content_icon">
+                <div class="topic">
+                    <p>보도자료</p>
+                </div>
+                <p class="date">2022.02.02</p>
+            </div>
+            <div class="content_S">
+                <img src="" alt="아이콘" class="content_icon">
+                <div class="topic">
+                    <p>보도자료</p>
+                </div>
+                <p class="date">2022.02.02</p>
+            </div>
         </div>
         <div id="link">
-            여기는 링크 섹션이 들어갑니다.
+            <div class="content_L">
+                <h1>사람과 기술로 일상을 돕는 카카오 서비스</h1>
+                <button>서비스 바로가기 <img src="" alt="화살표"></button>
+                <img src="" alt="">
+            </div>
+
+            <div class="content_L" id="content_L2">
+                <h1>세상만사에 관심이 많다면, 당신은 이미 카카오 크루</h1>
+                <button>인재영입 바로가기 <img src="" alt="화살표"></button>
+            </div>
+
+            <button class="link_button">카카오 소식 모아보기</button>
         </div>
     </section>
-    <section id="info">
-        여기는 인포섹션입니다(하단정보섹션)
-    </section>
+    <footer>
+        <section class="navi">
+            <ul>
+                <li>카카오
+                    <ul>
+                        <li>카카오문화</li>
+                        <li>공동체</li>
+                        <li>히스토리</li>
+                    </ul>
+                </li>
+                <li>뉴스</li>
+                <li>기술과 서비스
+                    <ul>
+                        <li>기술</li>
+                        <li>서비스</li>
+                    </ul>
+                </li>
+                <li>약속과 책임
+                    <ul>
+                        <li>ESG</li>
+                        <li>소셜임펙트</li>
+                        <li>디지털 서비스</li>
+                        <li>AI 윤리</li>
+                    </ul>
+                </li>
+                <li>투자 정보
+                    <ul>
+                        <li>기업지배구조</li>
+                        <li>주가정보</li>
+                        <li>재무정보</li>
+                        <li>IR행사</li>
+                    </ul>
+                </li>
+                <li>고객센터
+                    <ul>
+                        <li><a href="">카카오 고객센터</a></li>
+                        <li><a href="">다음 고객센터</a></li>
+                        <li><em>인재영입</em></li>
+                        <li><em>카카오계정</em></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </footer>
+    
 </body>
 </html>
